@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/flashAutoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flash_auto" />
+
+    <Button
+        android:layout_toRightOf="@+id/flashAutoButton"
+        android:id="@+id/flashOnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flash_on" />
+
+    <Button
+        android:layout_toRightOf="@+id/flashOnButton"
+        android:id="@+id/flashOffButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flash_off" />
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </FrameLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/takeImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/capture" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FocusCamera">
+        <attr name="fileName" format="string" />
+        <attr name="fileFormat" format="integer" />
+        <attr name="maxZoom" format="integer" />
+        <attr name="minZoom" format="integer" />
+        <attr name="flashMode" format="integer" />
+    </declare-styleable>
+
+</resources>
