@@ -1,5 +1,7 @@
 package il.co.focuscameracustom.inmanage.focuscameracustom;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -25,10 +27,14 @@ public class MainActivity extends AppCompatActivity {
     private void initCamera() {
         if (focusCamera.isCameraHardwareExist()) {
             focusCamera.startCamera();
+
             focusCamera.setOnCameraListener(new FocusCamera.OnImageCaptureListener() {
                 @Override
                 public void imageCaptureSuccess(FocusImageResponse imageObject) {
                     String image64 = imageObject.getImagebase64();
+                    Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.sample1);
+                    focusCamera.setCropMode(FocusCamera.CropMode.CIRCLE);
+                    focusCamera.startCropImage(bitmap);
                 }
             });
         }

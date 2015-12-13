@@ -7,6 +7,29 @@
         <attr name="maxZoom" format="integer" />
         <attr name="minZoom" format="integer" />
         <attr name="flashMode" format="integer" />
+        <attr name="imgSrc" format="reference" />
+        <attr name="cropMode">
+            <enum name="ratio_free" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+        <attr name="backgroundColor" format="color" />
+        <attr name="overlayColor" format="color" />
+        <attr name="frameColor" format="color" />
+        <attr name="handleColor" format="color" />
+        <attr name="guideColor" format="color" />
+        <attr name="guideShowMode">
+            <enum name="show_on_touch" value="1" />
+        </attr>
+        <attr name="handleShowMode">
+            <enum name="show_always" value="1" />
+        </attr>
+        <attr name="handleSize" format="dimension" />
+        <attr name="touchPadding" format="dimension" />
+        <attr name="minFrameSize" format="dimension" />
+        <attr name="frameStrokeWeight" format="dimension" />
+        <attr name="guideStrokeWeight" format="dimension" />
+        <attr name="cropEnabled" format="boolean" />
+        <attr name="initialFrameScale" format="float" />
     </declare-styleable>
 
 </resources>
